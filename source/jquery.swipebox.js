@@ -18,7 +18,6 @@
 			hideBarsDelay : 3000,
 			videoMaxWidth : 1140,
 			vimeoColor : 'CCCCCC',
-			youTubeRelated : true, //whether or not to display related vidoes from YouTube once video is finished
 			beforeOpen: null,
 		      	afterClose: null
 		},
@@ -500,9 +499,8 @@
 				var youtubeUrl = url.match(/watch\?v=([a-zA-Z0-9\-_]+)/);
 				var vimeoUrl = url.match(/vimeo\.com\/([0-9]*)/);
 				if( youtubeUrl ){
-					if(youTubeRelated) relVid = '';
-					else relVid = '?rel=0';
-					iframe = '<iframe width="560" height="315" src="//www.youtube.com/embed/'+youtubeUrl[1]+relVid+'" frameborder="0" allowfullscreen></iframe>';
+
+					iframe = '<iframe width="560" height="315" src="//www.youtube.com/embed/'+youtubeUrl[1]+'?rel=0" frameborder="0" allowfullscreen></iframe>';
 				
 				}else if(vimeoUrl){
 
