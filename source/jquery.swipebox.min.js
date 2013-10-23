@@ -3,7 +3,7 @@
 @author       Constantin Saguin - @brutaldesign
 @link            http://csag.co
 @github        http://github.com/brutaldesign/swipebox
-@version     1.2.1
+@version     1.2.1.1
 @license      MIT License
 
 ----------------------------------------------------------------------------------------------*/
